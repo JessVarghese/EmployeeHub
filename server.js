@@ -1,7 +1,8 @@
 const express = require('express');
 const PORT = process.env.PORT || 3001;
 const app = express();
-
+const apiRoutes = require('./routes/apiRoutes');
+const db = require('./db/connection');
 const mysql = require('mysql2');
 
 
@@ -18,13 +19,13 @@ app.use((req, res) => {
 });
 
 // Start server after DB connection
-db.connect(err => {
-  if (err) throw err;
-  console.log('Database connected.');
-  app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
-});
+// db.connect(err => {
+//   if (err) throw err;
+//   console.log('Database connected.');
+//   app.listen(PORT, () => {
+//     console.log(`Server running on port ${PORT}`);
+//   });
+// });
 
 
 
