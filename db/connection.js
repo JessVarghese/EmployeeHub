@@ -6,8 +6,8 @@ const mysql = require('mysql');
 const db = mysql.createConnection({
     host: 'localhost',
     port: 3001,
-    user: 'root',
-    password: process.env.password,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
     database: 'employee_hub_db',
   });
 
