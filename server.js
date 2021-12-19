@@ -76,12 +76,14 @@ promptDatabase = () => {
 
 // function to view all Employees
 function viewAllEmployees() {
-  connection.query("SELECT * FROM employee_hub_db.employees", function(query) {
-      // if (err) throw err;
-      console.table(query);
-      promptDatabase(); 
-  });
-};
+  connection.query(
+    'SELECT * FROM `employees` WHERE `first_name` = "Cathy"',
+    function(err, results, fields) {
+      console.log(results); // results contains rows returned by server
+      console.log(fields); // fields contains extra meta data about results, if available
+     }
+  )
+}
 
 
 //function to view all departments

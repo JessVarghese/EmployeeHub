@@ -27,16 +27,16 @@ VALUES
 
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
 VALUES
-('Kelly', 'Arnold', 1, 'Slytherin'),
-('Lisa', 'Crumb', 2, 'Hufflepuff'),
-('Becky', 'Ham', 3, 'Gryffindor'),
-('Nicole', 'Spenz', 1, 'Slytherin'),
-('Bronwyn', 'Beltz', 2, 'Hufflepuff'),
-('Rachelle', 'Lopez', 3, 'Gryffindor'),
-('Ophelia', 'Lauren', 1, 'Slytherin'),
-('Cathy', 'Candle', 2, 'Hufflepuff'),
-('Simone', 'Cloud', 3, 'Gryffindor'),
-('Tinsley', 'Montgomery', 1, 'Slytherin');
+('Kelly', 'Arnold', 1, '123'),
+('Lisa', 'Crumb', 2, '456'),
+('Becky', 'Ham', 3, '789'),
+('Nicole', 'Spenz', 1, '123'),
+('Bronwyn', 'Beltz', 2, '456'),
+('Rachelle', 'Lopez', 3, '789'),
+('Ophelia', 'Lauren', 1, '123'),
+('Cathy', 'Candle', 2, '456'),
+('Simone', 'Cloud', 3, '789'),
+('Tinsley', 'Montgomery', 1, '123');
 
 
 
