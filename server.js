@@ -4,20 +4,9 @@ const mysql = require('mysql2');
 const connection = require('./db/connection')
 
 
-
-
-// Start server after DB connection
-connection.connect(err => {
-  // if (err) throw err;
-  console.log('Welcome to Employee Hub');
-  promptDatabase();
-});
-
-
-
 //Inquirer Questions
 
-promptDatabase = () => {
+function promptDatabase() { 
 
       inquirer.prompt([
 
@@ -62,36 +51,51 @@ promptDatabase = () => {
         case 'Exit Employee Hub':
         connection.end();
         console.log('You have exited the program. Goodbye!');
-        return;
-        default:
         break;
 
-        }
+       }
 
     })
-
 }
+promptDatabase();
 
 //View All functions
 
 // function to view all Employees
 function viewAllEmployees() {
   connection.query(
-    'SELECT * FROM employees',
-    function(err, results, fields) {
+    'SELECT first_name,last_name, role_id, manager_id FROM employees',
+    function(err, results) {
       if (err) console.error(err);
-      console.log(results); // results contains rows returned by server
-      console.log(fields); // fields contains extra meta data about results, if available
-     }
-  )
+      console.table(results); // results contains rows returned by server
+      promptDatabase();
+    })
 }
 
 
-//function to view all departments
 
+//function to view all departments
+function viewAllDepartments() {
+  connection.query(
+    'SELECT name FROM departments',
+    function(err, results) {
+      if (err) console.error(err);
+      console.table(results); // results contains rows returned by server
+      promptDatabase();
+    })
+}
+  
 
 //function to view all roles
-
+function viewAllRoles() {
+  connection.query(
+    'SELECT title, salary, department_id FROM roles',
+    function(err, results) {
+      if (err) console.error(err);
+      console.table(results); // results contains rows returned by server
+      promptDatabase();
+    })
+}
 
 //function to view employees by manager
 
