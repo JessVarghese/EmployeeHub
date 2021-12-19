@@ -1,6 +1,6 @@
-const express = require('express');
-const router = express.Router();
-const db = require('../../db/connection');
+// const express = require('express');
+// const router = express.Router();
+// const db = require('../../db/connection');
 
 
 
@@ -15,4 +15,4 @@ const db = require('../../db/connection');
 
 
 
-module.exports = router;
+// module.exports = router;

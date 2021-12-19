@@ -1,7 +1,14 @@
+CREATE DATABASE employee_hub_db;
+USE employee_hub_db;
+
+
+
 CREATE TABLE departments (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(30) NOT NULL
 );
+
+
 
 CREATE TABLE roles (
   id INTEGER AUTO_INCREMENT PRIMARY KEY,
