@@ -77,8 +77,9 @@ promptDatabase = () => {
 // function to view all Employees
 function viewAllEmployees() {
   connection.query(
-    'SELECT * FROM `employees` WHERE `first_name` = "Cathy"',
+    'SELECT * FROM employees',
     function(err, results, fields) {
+      if (err) console.error(err);
       console.log(results); // results contains rows returned by server
       console.log(fields); // fields contains extra meta data about results, if available
      }
