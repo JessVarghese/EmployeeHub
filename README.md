@@ -11,6 +11,7 @@
   ## Table of Contents
 
   * [Installation](#Installation)
+  * [Demo](#Demo)
   * [Dependencies](#dependencies)
   * [Visuals](#usage)
   * [License](#license)
@@ -21,7 +22,8 @@
   ## Installation
   gh repo clone JessVarghese/EmployeeHub
   
-  
+  ## Demo
+  ![VIDEO DEMO](https://watch.screencastify.com/v/NJdNTy33OiJdsjfkjIap)
  
   ## Dependencies
   npm i, npm install inquirer, npm install mysql, npm install --save mysql2, npm install inquirer, npm install console.table --save
