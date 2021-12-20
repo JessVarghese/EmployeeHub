@@ -179,7 +179,6 @@ function addDepartment() {
               connection.query(query, function(err, res) {
               if(err)throw err;
               console.log('Your department has been added!');
-              console.table('All Departments:', res);
               promptDatabase();
               })
           })
@@ -220,7 +219,6 @@ function addRole() {
               function (err, res) {
                   if(err)throw err;
                   console.log('Your new role has been added!');
-                  console.table('All Roles:', res);
                   promptDatabase();
               })
       })
