@@ -11,22 +11,24 @@
   ## Table of Contents
 
   * [Installation](#Installation)
-  * [Usage](#usage)
+  * [Dependencies](#dependencies)
+  * [Visuals](#usage)
   * [License](#license)
   * [Contributions](#contributing)
-  * [Tests](#tests)
   * [Questions](#questions)
  
 
   ## Installation
+  gh repo clone JessVarghese/EmployeeHub
   
-  npm i, npm install inquirer, npm install mysql, npm install --save mysql2, npm install inquirer, npm install console.table --save
+  
  
-  ## Usage
-  na
+  ## Dependencies
+  npm i, npm install inquirer, npm install mysql, npm install --save mysql2, npm install inquirer, npm install console.table --save
   
-  
- ![visuals](undefined)
+  ## Visuals
+ ![visuals](./assets/employee_hub_1.png)
+ ![visuals](./assets/employee_hub_2.png)
 
   ## License
   This project operates under the [MIT](https://choosealicense.com/licenses/MIT/) license.
@@ -34,8 +36,6 @@
   ## Contributing
   Open to suggestions on new features
 
-  ## Tests
-  nn
 
   ## Questions
   If you have any questions about the repo, open and issue or contact me directly:
