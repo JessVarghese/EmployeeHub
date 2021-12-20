@@ -23,14 +23,14 @@
   gh repo clone JessVarghese/EmployeeHub
   
   ## Demo
-  ![VIDEO DEMO](https://watch.screencastify.com/v/NJdNTy33OiJdsjfkjIap)
+  [VIDEO DEMO](https://watch.screencastify.com/v/NJdNTy33OiJdsjfkjIap)
  
   ## Dependencies
   npm i, npm install inquirer, npm install mysql, npm install --save mysql2, npm install inquirer, npm install console.table --save
   
   ## Visuals
- ![visuals](./assets/employee_hub_1.png)
- ![visuals](./assets/employee_hub_2.png)
+ <img src="./assets/employee_hub_1.png" width="500"/>
+ <img src="./assets/employee_hub_2.png" width="500"/>
 
   ## License
   This project operates under the [MIT](https://choosealicense.com/licenses/MIT/) license.
