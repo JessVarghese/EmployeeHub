@@ -203,7 +203,7 @@ function addRole() {
               message: 'What is the salary of this role? (Enter a number)'
           },
           {
-              name: 'Department',
+              name: 'department_id',
               type: 'input',
               message:'Enter Department ID:'
               },
